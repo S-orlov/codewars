@@ -1,4 +1,6 @@
-
+/*
+   task 1 09.10.2024
+*/
 function solve(s){
   let upCaseCNT = 0;
   let lwCaseCNT = 0;
@@ -14,6 +16,9 @@ function solve(s){
 }
 
 
+/*
+  task_2 09.10.2024
+*/
 function squareDigits(num){
   let digits = num.toString().split('');
     let sum = "";
