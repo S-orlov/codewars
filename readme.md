@@ -1,6 +1,6 @@
 # codewars ...
 ##   first task
-
+code solutions :
 ```
  // return masked string
  function maskify(cc) {
