@@ -1,1 +1,13 @@
-
+function solve(s){
+  let upCaseCNT = 0;
+  let lwCaseCNT = 0;
+  let numberCNT = 0;
+  let specialCNT = 0;
+  for(let char of s){
+    if (/[A-Z]/.test(char)){upCaseCNT++;}
+    else if(/[a-z]/.test(char)){lwCaseCNT++;}
+    else if(/[0-9]/.test(char)){numberCNT++;}
+    else{specialCNT++;}
+  }
+  return [upCaseCNT, lwCaseCNT, numberCNT, specialCNT];
+}
