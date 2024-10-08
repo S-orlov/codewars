@@ -1,3 +1,4 @@
+
 function solve(s){
   let upCaseCNT = 0;
   let lwCaseCNT = 0;
@@ -10,4 +11,14 @@ function solve(s){
     else{specialCNT++;}
   }
   return [upCaseCNT, lwCaseCNT, numberCNT, specialCNT];
+}
+
+
+function squareDigits(num){
+  let digits = num.toString().split('');
+    let sum = "";
+    for (let i=0; i<digits.length; i++){
+        sum += Math.pow(parseInt(digits[i]),2).toString();
+    }
+    return parseInt(sum);
 }
